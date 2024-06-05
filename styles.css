@@ -70,3 +70,50 @@ body {
     height: 100%;
     object-fit: cover;
   }
+
+  .buttons {
+    position: absolute;
+    bottom: 75px;
+    display: flex;
+    gap: 20px;
+  }
+
+  .buttons span {
+    position: relative;
+    width: 50px;
+    height: 50px;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0.5;
+  }
+
+  .buttons span:hover {
+    opacity: 1;
+  }
+
+  .buttons span::before {
+    content: '';
+    position: absolute;
+    left: 20px;
+    width: 10px;
+    height: 10px;
+    border-top: 2px solid #fff;
+    border-left: 2px solid #fff;
+    rotate: -45deg;
+  }
+
+  .buttons span:last-child::before {
+    content: '';
+    position: absolute;
+    left: initial;
+    right: 20px;
+    width: 10px;
+    height: 10px;
+    border-top: 2px solid #fff;
+    border-left: 2px solid #fff;
+    rotate: 135deg;
+  }
