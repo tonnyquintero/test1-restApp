@@ -7,15 +7,38 @@
     <title>Tu Restaurante App 2.0</title>
 </head>
 <body>
+    <h1 class="main-tittle">Bienvenidos a Restaurante Le Blanc</h1>
+    <h3>Selecciona una de nuestras recomendaciones</h3>
+<section class="recomends">
     <div class="box">
-        <div class="item"><img src="public/img1.png"></div>
-        <div class="item"><img src="public/img2.png"></div>
-        <div class="item"><img src="public/img3.png"></div>
-        <div class="item"><img src="public/img4.png"></div>
-        <div class="item"><img src="public/img5.png"></div>
-        <div class="item"><img src="public/img6.png"></div>
-        <div class="item"><img src="public/img7.png"></div>
+            <div class="item">
+                <a href="https://platzi.com/"><img src="public/img1.png"></a>
+            </div>   
+        <div class="item">
+            <a href="https://platzi.com/"><img src="public/img2.png"></a>
+        </div>
+        <div class="item">
+            <a href="https://platzi.com/"><img src="public/img3.png"></a>
+        </div>
+        <div class="item">
+            <a href="https://platzi.com/"><img src="public/img4.png"></a>
+        </div>
+        <div class="item">
+            <a href="https://platzi.com/"><img src="public/img5.png"></a>
+        </div>
+        <div class="item">
+            <a href="https://platzi.com/"><img src="public/img6.png"></a>
+        </div>
+        <div class="item">
+            <a href="https://platzi.com/"><img src="public/img7.png"></a>
+        </div>
     </div>
+
+    <div class="newbuttons">
+        <span class="anterior"></span>
+        <span class="siguiente"></span>
+    </div>
+
     <div class="buttons">
         <span class="prev"></span>
         <span class="next"></span>
@@ -33,5 +56,18 @@
             document.querySelector('.box').prepend(items[items.length - 1])
         })
     </script>
+</section>
+<h3 class="fill-text">Disfruta de toda nuestra carta</h3>
+<div class="fill">
+    <a href="https://platzi.com/">
+        <img class="fill-image" src="public/img1.png">
+    </a>
+        <img class="fill-image" src="public/img2.png">
+        <img class="fill-image" src="public/img3.png">
+        <img class="fill-image" src="public/img4.png">
+        <img class="fill-image" src="public/img5.png">
+        <img class="fill-image" src="public/img6.png">
+        <img class="fill-image" src="public/img7.png">
+</div>
 </body>
 </html>
